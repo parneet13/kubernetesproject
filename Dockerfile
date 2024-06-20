@@ -5,8 +5,8 @@ RUN apt-get update -y && apt-get install -y apache2 \
  curl  \
  nodejs \
  git
+COPY . /var/www/html/
 WORKDIR /var/www/html
-git clone https://github.com/parneet13/kubernetesproject.git/.
 npm i
 npm run build 
 #RUN echo "parneet singh" >index.html
