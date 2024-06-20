@@ -4,7 +4,8 @@ RUN apt-get update -y && apt-get install -y apache2 \
  unzip \
  curl  \
  nodejs \
- git
+ git \
+ npm
 COPY . /var/www/html/
 WORKDIR /var/www/html
 RUN npm i
