@@ -11,6 +11,7 @@ WORKDIR /var/www/html
 RUN npm i
 RUN npm run build
 RUN  npm install pm2 -g
+RUN pm2 start --name scr.gamesee.gg  npm -- start
 #RUN npm start 
 #RUN echo "parneet singh" >index.html
 #RUN curl -o canvas.zip https://www.free-css.com/assets/files/free-css-templates/download/page273/canvas.zip
