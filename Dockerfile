@@ -2,7 +2,8 @@ FROM ubuntu:latest
 RUN apt-get update -y && apt-get install -y apache2 \
  zip \
  unzip \
- curl
+ curl  \
+ nodejs 
 WORKDIR /var/www/html
 RUN echo "parneet singh" >index.html
 #RUN curl -o canvas.zip https://www.free-css.com/assets/files/free-css-templates/download/page273/canvas.zip
