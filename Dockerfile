@@ -6,7 +6,7 @@ RUN apt-get update -y && apt-get install -y apache2 \
  nodejs \
  git \
  npm
-COPY /opt/* /var/www/html/
+COPY . /var/www/html/
 WORKDIR /var/www/html
 RUN npm i
 RUN npm run build 
